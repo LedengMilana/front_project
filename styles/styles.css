@@ -477,7 +477,109 @@
     color: #1F1E1E;
 }
 
-.page-footer {
+.song-list {
+    list-style: none; /* Убираем стандартные маркеры у списка */
+    margin-top: 50px;
+    padding-left: 0;
+    width: 401px;
+    height: 278px;
+}
 
+.song-list-item {
+    counter-increment: song-counter;
+    margin-bottom: 12px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #1F1E1E;
+}
+
+.song-list-item::before {
+    content: counter(song-counter) ". ";
+    color: #1F1E1E; /* Стиль маркера соответствует стилю текста */
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 5px;
+}
+
+.order_container{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 62px auto 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+
+.abovefooter-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px; /* Расстояние между линиями и футером */
+}
+
+.footer-line img {
+    width: 1334px;
+    height: 2px;
+    flex-shrink: 0;
+    margin: 0 auto; 
+}
+
+.page-footer {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+}
+
+.redline {
+    width: 4px;
+    height: 198px;
+    flex-shrink: 0;
+    margin-right: 22px; /* Расстояние между красной линией и текстами */
+}
+
+.footer-item__img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; /* Межстрочный интервал между текстами */
+    height: 198px; /* Высота текстового блока */
+}
+
+.footer-text p {
+    margin: 0;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #1F1E1E;
 }
 
