@@ -29,7 +29,7 @@ const resources = {
     less: "src/styles/**/*.less",
     static: [
         "src/assets/icons/**/*.*",
-        "src/assets/fonts/**/*.{woof,woof2}"
+        "src/assets/fonts/**/*.{woff,woff2}"
     ],
     images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}",
     svgSprite: "src/assets/svg-sprite/*.svg"
