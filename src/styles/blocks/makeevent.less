@@ -1,0 +1,85 @@
+.makeevent {
+    //max-width: 272px;
+    //width: 100%;
+    &__container{
+        .container
+    }
+    &__wrapper {
+        .width_624;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 62px;
+        margin: 46px auto 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+
+    }
+
+    &__submit {
+        max-width: 272px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        background-color: @red;
+        color: @white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        transition: background-color 0.2s;
+
+        &:hover {
+            @media(hover: hover) {
+                background-color: @red_dark;
+            }
+        }
+
+        &:active {
+            background-color: @red_dark;
+        }
+    }
+
+    &__submit2 {
+        //display: inline-block;
+        max-width: 272px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 40px;
+        border: 1px solid @black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        outline: none;
+        color: @black;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: normal;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        
+        cursor: pointer;
+
+        &:active {
+            background-color: @black;
+            color: @white;
+        }
+
+        &:hover {
+            @media (hover: hover) {
+                background-color: @black;
+                color: @white;
+            }
+
+        }
+    }
+}
