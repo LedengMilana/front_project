@@ -1,9 +1,10 @@
-.listing{
+.listing {
     .container;
     display: flex;
     flex-direction: column;
+
     //margin: 0 auto;
-    &__events-list{
+    &__events-list {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -30px -120px;
@@ -14,7 +15,34 @@
         margin: 0 30px 120px;
     }
 
-    &__title{
+    &__title {
         margin-top: 207px;
+    }
+
+    &__link {
+        margin-top: 70px;
+        margin-left: 20px;
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        text-align: right;
+        text-decoration: none;
+        min-height: 52px;
+        font-weight: 600;
+        font-size: 16px;
+        color: @black;
+        transition: color 0.2s;
+
+        &:hover {
+            color: @red;
+            //@media (hover: hover){
+            //color: @red;
+            //}
+        }
+
+        &:active {
+            color: @red;
+        }
     }
 }

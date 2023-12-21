@@ -1,15 +1,38 @@
-.check{
+.check {
     box-sizing: border-box;
     position: relative;
     padding-left: 40px;
     display: block;
 
-    &__input{
+    &--red {
+        color: @red;
+
+        .check__mark {
+            border-color: @red;
+        }
+
+        .check__input {
+            &:checked {
+                &~.check__mark {
+                    background-color: @red;
+                }
+            }
+        }
+    }
+
+    &--disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    &__input {
         .is-hidden;
-        &:checked{
-            & ~ .check__mark{
+
+        &:checked {
+            &~.check__mark {
                 background-color: @black;
-                &::after{
+
+                &::after {
                     content: '';
                     display: block;
                     position: absolute;
@@ -24,7 +47,8 @@
             }
         }
     }
-    &__mark{
+
+    &__mark {
         position: absolute;
         top: 0;
         left: 0;
@@ -34,8 +58,11 @@
         background-color: transparent;
         transition: background-color 0.2s;
     }
-    &__label{
-        font-size: 14px;
+
+    &__label {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
         color: @black;
 
     }
