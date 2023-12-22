@@ -476,7 +476,7 @@ textarea {
 }
 .field__label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 22px;
   color: #1f1e1e;
@@ -559,8 +559,53 @@ textarea {
   max-width: 400px;
   width: 100%;
 }
+.form__btn2 {
+  margin-left: 160px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #1f1e1e;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+.form__btn2:active {
+  background-color: #1f1e1e;
+  color: #ffffff;
+  text-decoration: underline;
+}
 .form__check--mb40 {
   margin-bottom: 40px;
+}
+.form__select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.375;
 }
 .contacts-item {
   display: -webkit-box;
@@ -684,6 +729,9 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 62px;
   margin: 46px auto 100px;
   display: -webkit-box;
@@ -692,9 +740,6 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -912,7 +957,7 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -30px -120px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 .listing__event-card {
   width: calc(33.333% - 60px);
@@ -922,7 +967,7 @@ textarea {
   margin-top: 128px;
 }
 .listing__link {
-  margin-top: 70px;
+  margin-top: 20px;
   margin-left: 20px;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1002,6 +1047,7 @@ textarea {
   text-align: right;
 }
 .reserve__section-title {
+  max-width: 405px;
   margin: 0 0 20px;
   font-weight: 700;
   font-size: 18px;
@@ -1060,6 +1106,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 405px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1070,10 +1117,35 @@ textarea {
 .reserve__qty::after {
   content: " " attr(data-caption) " | " attr(data-price);
 }
+.reserve__sum {
+  margin-top: 11px;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 .reserve__sum::after {
   content: attr(data-currency);
   margin-left: 4px;
   font-size: 0.95em;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.reserve__total {
+  max-width: 405px;
+  margin-top: 26px;
+  margin-bottom: 53px;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .reserve__total::before {
   content: attr(data-caption);
@@ -1181,6 +1253,35 @@ textarea {
 }
 .reserve__note:last-child {
   margin-bottom: 0;
+}
+.reserve__submit {
+  max-width: 405px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 131px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  background-color: #bc3324;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.reserve__submit:active {
+  background-color: #a51505;
 }
 .article {
   padding: 40px 0 150px;
@@ -1544,7 +1645,7 @@ textarea {
   line-height: 19px;
 }
 .event {
-  padding: 40px 0 150px;
+  padding: 40px 0 130px;
 }
 .event__container {
   -webkit-box-sizing: border-box;
@@ -1565,6 +1666,7 @@ textarea {
   margin-right: auto;
   padding-left: 40px;
   padding-right: 40px;
+  margin-bottom: 80px;
 }
 .event__about {
   display: -webkit-box;
@@ -1603,6 +1705,7 @@ textarea {
 .event__info::after {
   content: "";
   position: absolute;
+  right: 0;
   display: block;
   width: 140px;
   max-width: 100%;
@@ -1621,6 +1724,44 @@ textarea {
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: left;
+}
+.event__info:last-child::before,
+.event__info:last-child::after {
+  left: 0;
+  right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1C1B1B), color-stop(82.86%, rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0) 82.86%);
+}
+.event__time {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+}
+.event__time[datetime]::after {
+  content: attr(data-caption);
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.event__info-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.event__picture {
+  display: block;
+  width: 497px;
+  margin: 0 50px;
+}
+.event__image {
+  display: block;
+  width: 100%;
+}
+.event__content {
+  max-width: 830px;
+  margin-bottom: 80px;
 }
 .contacts__container {
   -webkit-box-sizing: border-box;
@@ -2162,6 +2303,9 @@ textarea {
   .btnall:hover {
     color: #bc3324;
   }
+  .form__btn2:hover {
+    color: #bc3324;
+  }
   .contacts-item__info[href]:hover {
     color: #bc3324;
   }
@@ -2174,6 +2318,9 @@ textarea {
   .makeevent__submit2:hover {
     background-color: #1f1e1e;
     color: #ffffff;
+  }
+  .reserve__submit:hover {
+    background-color: #a51505;
   }
   .event-card__link:hover .event-card__title {
     color: #bc3324;

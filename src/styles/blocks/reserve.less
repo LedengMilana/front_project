@@ -33,6 +33,7 @@
     }
 
     &__section-title {
+        max-width: 405px;
         margin: 0 0 20px;
         font-weight: 700;
         font-size: 18px;
@@ -90,25 +91,50 @@
 
     &__tickets {
         display: flex;
+        max-width: 405px;
         justify-content: space-between;
         align-items: baseline;
+        //padding-bottom: 15px;
     }
 
     &__qty {
+        //padding-bottom: 18px;
         &::after {
             content: " " attr(data-caption) " | " attr(data-price);
+            
         }
     }
 
     &__sum {
+        margin-top: 11px;
+        text-align: right;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
         &::after {
             content: attr(data-currency);
             margin-left: 4px;
             font-size: 0.95em;
+            text-align: right;
+            font-family: Open Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
         }
     }
 
     &__total {
+        max-width: 405px;
+        margin-top: 26px;
+        margin-bottom: 53px;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
         &::before {
             content: attr(data-caption);
             margin-right: 30px;
@@ -218,6 +244,35 @@
 
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    &__submit {
+        max-width: 405px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 131px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        background-color: @red;
+        color: @white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        transition: background-color 0.2s;
+
+        &:hover {
+            @media(hover: hover) {
+                background-color: @red_dark;
+            }
+        }
+
+        &:active {
+            background-color: @red_dark;
         }
     }
 
