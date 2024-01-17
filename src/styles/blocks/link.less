@@ -10,20 +10,40 @@
     transition: color 0.2s;
     &:hover {
         color: @red;
-        //@media (hover: hover){
-            //color: @red;
-        //}
+        
     }
     &:active{
         color: @red;
     }
 
-    //&__name,
-    //&__icon{
-    //    cursor: pointer;
-    //}
+    &__name-events{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
     &__icon{
         //cursor: pointer;
         margin-left: 20px;
     }
+
+    &__icon1{
+        margin-right: 122px;
+        transform: scaleX(-1);
+        
+    }
+    &__icon2{
+        margin-left: 122px;
+        
+    }
+
+    &__icon3{
+        align-items: center;
+    }
+
+    &__icon-rt{
+        transform: rotate(90deg);
+        
+    }
+
+    
 }

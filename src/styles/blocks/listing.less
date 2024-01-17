@@ -8,7 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         margin: 0 -30px -120px;
-        margin-bottom: 30px;//50
+        //margin-bottom: 0px;//50
     }
 
     &__event-card {
@@ -17,7 +17,7 @@
     }
 
     &__title {
-        margin-top: 128px;//207
+        margin-top: 148px;//207
     }
 
     &__link {
@@ -46,4 +46,58 @@
             color: @red;
         }
     }
+
+    &__slider {
+        margin-top: 70px;
+        margin-left: 405px;
+        margin-right: 405px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        min-height: 60px;
+        max-width: 525px;
+        color: @black;
+        transition: color 0.2s;
+        
+    }
+
+    &__link-m0 {
+        align-self: flex-end;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        text-align: right;
+        text-decoration: none;
+        padding: 15px 0px 15px 40px;
+        min-height: 22px;
+        font-weight: 600;
+        font-size: 16px;
+        color: @black;
+        transition: color 0.2s;
+
+        &:hover {
+            color: @red;
+            //@media (hover: hover){
+            //color: @red;
+            //}
+        }
+
+        &:active {
+            color: @red;
+        }
+    }
+    &__events-link{
+        margin: 70px auto;
+        margin-bottom: 100px;
+        display: flex;
+        width: 128px;
+        height: 132px;
+        //padding: 0px 7px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

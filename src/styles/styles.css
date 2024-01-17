@@ -56,9 +56,9 @@
     color: #1f1e1e;
 }
 
-.home {
-    padding-top: 147px;
-}
+
+
+
 
 .main-header__title,
 .main-header__text {
@@ -245,125 +245,6 @@
     color: #1F1E1E;
 }
 
-.thebest-header__title{
-    margin: 0 auto;
-    text-align: center;
-    font-family: Lora;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    color: #1F1E1E;
-}
-
-.thebest-header__picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 80px;
-    width: 100%;
-    text-align: center;
-}
-
-.thebest-header__img {
-    width: 497px;
-    height: 532px;
-    flex-shrink: 0;
-}
-
-.thebest-header {
-    padding: 38px 0 0 0;
-}
-
-.thebest-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1414px;
-    margin: 0 auto;
-}
-
-.thebest-left-content,
-.thebest-right-content {
-    text-align: center;
-}
-
-.thebest-left-content img,
-.thebest-right-content img {
-    display: block;
-    margin: 0 auto;
-}
-
-.thebest-left-content {
-    margin-left: 60px;
-}
-
-.thebest-left-content__img {
-    width: 139px;
-    height: 1px;
-    flex-shrink: 0;
-}
-
-.thebest-left-content_date,
-.thebest-left-content_text{
-    font-family: 'Mak', sans-serif;
-    font-size: 16px;
-    color: #1F1E1E;
-    margin: 8px 0; /* Расстояние между строками */
-}
-
-.thebest-left-content_date {
-    text-align: right;
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
-.thebest-left-content_text {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.thebest-right-content {
-    margin-right: 60px;
-}
-
-.thebest-right-content img {
-    width: 160px;
-    height: 1px;
-    flex-shrink: 0;
-}
-
-.thebest-right-content_time,
-.thebest-right-content_start,
-.thebest-right-content_adress {
-    font-family: 'Mak', sans-serif;
-    color: #1F1E1E;
-    margin: 8px 0;
-}
-
-.thebest-right-content_time,
-.thebest-right-content_start {
-    display: inline-block;
-    
-}
-
-.thebest-right-content_time {
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: normal;
-    margin-bottom: 11px;
-}
-
-.thebest-right-content_start,
-.thebest-right-content_adress {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
 
 
 .program_container {

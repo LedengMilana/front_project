@@ -1,9 +1,13 @@
 .page-footer{
     box-sizing: border-box;
     padding: 60px 0 75px;
+    
     &__container{
         .container;
     }
+    position: relative;
+    //display: flex; /* Добавьте display: flex; чтобы блоки были в строке */
+    //justify-content: space-between;
     &__border{
         display: flex;
         margin-bottom: 60px;
@@ -63,5 +67,90 @@
             color: @red;
         }
     }
+    &__copyrate {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        min-height: 22px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__nav-link1,
+    &__nav-link2 {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: @black;
+        
+        transition: color 0.2s;
+        &:hover {
+            @media(hover: hover) {
+                color: @red;
+            }
+        }
+        &:active {
+            color: @red;
+        }
+        
+    }
+    &__nav-link1 {
+        margin-right: 60px;
+        &:last-child{
+            
+            margin-right: 0;
+        }
+    }
+
+    &__snetwork-btn{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 22px;
+        width: 58px;
+        height: 58px;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        background-color: @black;
+        color: @white;
+        &:last-child{
+            margin-left:22px;
+            margin-right: 0;
+        }
+    }
     
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -10px;
+    }
+    
+    &__snetwork {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: -39px;
+        margin-bottom: -15px;
+    }
+    
+    &__info1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+    }
+    
+    &__info1-icon {
+        margin-left: 15px;
+    }
 }

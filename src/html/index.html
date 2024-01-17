@@ -27,13 +27,16 @@
           
 
         </header>
-        <section class="offers home__offers"></section>
+        <!-- <section class="offers home__offers"></section>  -->
         @@include('blocks/about.html', { class: 'home__about' })
         
         @@include('blocks/upcoming.html', { class: 'home__upcoming' })
         @@include('blocks/blog-listing.html', {"class": "home__listing"})
         @@include('blocks/contacts.html', { class: 'home__contacts' })
-        
+        <div class="home__paragraph">
+          <p class="home__paragraph-p1">Просто делайте, что нравится, </p>
+          <p class="home__paragraph-p2">а мы вам поможем</p>
+        </div>
 
         <div class="doit home__doit"></div>
       </div>

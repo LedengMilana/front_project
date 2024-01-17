@@ -29,10 +29,42 @@ body {
 }
 
 .home {
-    padding-top: 147px;
+    //padding-top: 147px;
     &__listing {
         margin-bottom: 78px;
-      }
+    }
+    &__paragraph{
+        box-sizing: border-box;
+        max-width: 2161px;
+        margin-top: 230px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__paragraph-p1,
+    &__paragraph-p2{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        font-family: @font3;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    &__paragraph-p1{
+        max-width: 2161px;
+        margin-left: -52px;
+        white-space: nowrap;
+        overflow: visible;
+    }
+    &__paragraph-p2{
+        max-width: 1397px;
+        margin-left: 712px;
+        white-space: nowrap;
+        overflow: visible;
+
+    }
 }
 
 .main {
@@ -81,6 +113,25 @@ textarea {
 
     &:-ms-input-placeholder {
         color: #6c6c6c;
+    }
+}
+
+input:focus,
+textarea:focus {
+    &::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    &::-moz-placeholder {
+        color: transparent;
+    }
+
+    &:-moz-placeholder {
+        color: transparent;
+    }
+
+    &:-ms-input-placeholder {
+        color: transparent;
     }
 }
 
