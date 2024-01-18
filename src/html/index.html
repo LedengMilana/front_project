@@ -29,8 +29,12 @@
         </header>
         <!-- <section class="offers home__offers"></section>  -->
         @@include('blocks/about.html', { class: 'home__about' })
+        <div class="upcoming">
+          <div class="upcoming__topblock"></div>
+          @@include('blocks/upcoming.html', { class: 'home__upcoming' })
+          <div class="upcoming__bottomblock"></div>
+        </div>
         
-        @@include('blocks/upcoming.html', { class: 'home__upcoming' })
         @@include('blocks/blog-listing.html', {"class": "home__listing"})
         @@include('blocks/contacts.html', { class: 'home__contacts' })
         <div class="home__paragraph">

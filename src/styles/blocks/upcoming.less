@@ -1,0 +1,60 @@
+.upcoming {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.60);
+    padding-bottom: 54px;
+
+    &__topblock {
+        display: inline;
+        //position: absolute;
+        
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: -30px;
+        }
+
+        &::before {
+            border-bottom: 30px solid rgba(255, 255, 255, 0.60);
+            border-right: 40vw solid transparent;
+
+        }
+
+        &::after {
+            right: 0;
+            border-bottom: 30px solid rgba(255, 255, 255, 0.60);
+            border-left: 60vw solid transparent;
+            //border-width: 0 50px 87.1px 50px;
+            /* Задайте размер верхнего треугольника */
+            //border-color: transparent transparent red transparent;
+        }
+    }
+
+    &__bottomblock {
+        display: inline;
+        //position: absolute;
+        
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+        }
+
+        &::before {
+            border-top: 30px solid rgba(255, 255, 255, 0.60);
+            border-right: 60vw solid transparent;
+
+        }
+
+        &::after {
+            right: 0;
+            border-top: 30px solid rgba(255, 255, 255, 0.60);
+            border-left: 40vw solid transparent;
+            //border-width: 0 50px 87.1px 50px;
+            /* Задайте размер верхнего треугольника */
+            //border-color: transparent transparent red transparent;
+        }
+    }
+
+}
